@@ -39,6 +39,16 @@ let ITEMS = [
         getDescription: (it) => it.description,
     },
     {
+        name: "OP Auto Clicker Application",
+        description: "An auto clicker that clicks the spacebar for you with no effort what so ever, and it is super efficient and clean. The next application give <b>%vx per second</b>.",
+        cost: 10000,
+        initial_value: 47.2,
+        lvl: 0,
+        cost_func: (x) => 1.5 * x,
+        value_func: (x) => 1.2 * x,
+        getDescription: (it) => it.description.replace("%v", nfmt(it.value)),
+    },
+    {
         name: "Angry Influencer",
         description: "Angry influencer whose computer crashed and they're now bashing their heads against the keyboard. The more influencer you get, the faster they can hit it, because they can't stand competition. The next one will give <b>%vx per second</b>.",
         cost: 10000,
